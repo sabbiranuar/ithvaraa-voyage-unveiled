@@ -17,7 +17,7 @@ const features = [
     title: 'Expert Local Guides',
     icon: Map,
     shortDesc: 'Knowledge that brings destinations alive',
-    fullDesc: 'Our guides are not just experts—they're locals who share their homeland with pride and passion. Each guide undergoes rigorous training in regional history, cultural sensitivities, and ecological knowledge. With Ithvaraa guides, you'll discover hidden gems, hear authentic stories, and gain insights that no guidebook can provide—transforming your journey into a meaningful exploration.'
+    fullDesc: 'Our guides are not just experts—they\'re locals who share their homeland with pride and passion. Each guide undergoes rigorous training in regional history, cultural sensitivities, and ecological knowledge. With Ithvaraa guides, you\'ll discover hidden gems, hear authentic stories, and gain insights that no guidebook can provide—transforming your journey into a meaningful exploration.'
   },
   {
     id: 'community',
@@ -31,21 +31,21 @@ const features = [
     title: 'Responsible Tourism',
     icon: Trees,
     shortDesc: 'Sustainable practices for a better future',
-    fullDesc: 'Sustainability guides everything we do at Ithvaraa. We implement waste reduction programs, carbon offset initiatives, and support conservation projects throughout Northeast India. We partner exclusively with locally-owned businesses, employ regional staff, and ensure fair wages throughout our supply chain. By choosing us, you're contributing to preserving these pristine destinations for generations to come.'
+    fullDesc: 'Sustainability guides everything we do at Ithvaraa. We implement waste reduction programs, carbon offset initiatives, and support conservation projects throughout Northeast India. We partner exclusively with locally-owned businesses, employ regional staff, and ensure fair wages throughout our supply chain. By choosing us, you\'re contributing to preserving these pristine destinations for generations to come.'
   },
   {
     id: 'cultural',
     title: 'Cultural Immersion',
     icon: Globe,
     shortDesc: 'Authentic experiences that respect traditions',
-    fullDesc: 'We design experiences that go beyond surface-level tourism. Through home stays, community-led workshops, and participation in local festivals, our travelers gain genuine insight into Northeast India's diverse cultures. We collaborate with indigenous knowledge keepers and community elders to ensure cultural exchanges are respectful, educational, and mutually beneficial for both visitors and hosts.'
+    fullDesc: 'We design experiences that go beyond surface-level tourism. Through home stays, community-led workshops, and participation in local festivals, our travelers gain genuine insight into Northeast India\'s diverse cultures. We collaborate with indigenous knowledge keepers and community elders to ensure cultural exchanges are respectful, educational, and mutually beneficial for both visitors and hosts.'
   },
   {
     id: 'unique',
     title: 'Unique Experiences',
     icon: Sparkles,
-    shortDesc: 'Moments you won't find anywhere else',
-    fullDesc: 'Ithvaraa specializes in creating moments of wonder and discovery. Whether it's a private traditional dance performance, a cooking session with a local family, or accessing restricted areas with special permissions, we craft unexpected experiences that become the highlights of your journey. Our team constantly explores new routes and develops exclusive partnerships to ensure our offerings remain truly one-of-a-kind.'
+    shortDesc: 'Moments you won\'t find anywhere else',
+    fullDesc: 'Ithvaraa specializes in creating moments of wonder and discovery. Whether it\'s a private traditional dance performance, a cooking session with a local family, or accessing restricted areas with special permissions, we craft unexpected experiences that become the highlights of your journey. Our team constantly explores new routes and develops exclusive partnerships to ensure our offerings remain truly one-of-a-kind.'
   }
 ];
 
