@@ -60,14 +60,14 @@ const initialFeatures = [
     title: 'Cultural Immersion',
     icon: Globe,
     shortDesc: 'Authentic experiences that respect traditions',
-    fullDesc: 'We design experiences that go beyond surface-level tourism. Through home stays, community-led workshops, and participation in local festivals, our travelers gain genuine insight into Northeast India's diverse cultures.'
+    fullDesc: "We design experiences that go beyond surface-level tourism. Through home stays, community-led workshops, and participation in local festivals, our travelers gain genuine insight into Northeast India's diverse cultures."
   },
   {
     id: 'unique',
     title: 'Unique Experiences',
     icon: Sparkles,
-    shortDesc: 'Moments you won't find anywhere else',
-    fullDesc: 'Ithvaraa specializes in creating moments of wonder and discovery. Whether it's a private traditional dance performance, a cooking session with a local family, or accessing restricted areas with special permissions.'
+    shortDesc: "Moments you won't find anywhere else",
+    fullDesc: "Ithvaraa specializes in creating moments of wonder and discovery. Whether it's a private traditional dance performance, a cooking session with a local family, or accessing restricted areas with special permissions."
   }
 ];
 
