@@ -16,73 +16,73 @@ interface AdminSidebarProps {
   navItems: NavItem[];
   activeSection: string;
   setActiveSection: (section: string) => void;
-  isMobileOpen: boolean;
-  setIsMobileOpen: (isOpen: boolean) => void;
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }
 
 const AdminSidebar = ({
   navItems,
   activeSection,
   setActiveSection,
-  isMobileOpen,
-  setIsMobileOpen
+  isOpen,
+  setIsOpen
 }: AdminSidebarProps) => {
   return (
     <>
       {/* Mobile sidebar backdrop */}
-      {isMobileOpen && (
+      {isOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
-          onClick={() => setIsMobileOpen(false)}
+          className="fixed inset-0 bg-black/40 z-40 md:hidden"
+          onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Sidebar */}
       <aside 
         className={cn(
-          "fixed md:sticky top-0 left-0 z-50 md:z-0 h-screen w-64 bg-sidebar border-r border-sidebar-border transition-transform duration-300 ease-in-out",
+          "fixed md:relative top-0 left-0 z-50 md:z-0 h-screen w-64 bg-card border-r transition-transform duration-300 ease-in-out",
           "flex flex-col",
-          isMobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+          isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         )}
       >
         {/* Sidebar header */}
-        <div className="h-16 flex items-center justify-between px-4 border-b border-sidebar-border">
-          <Link to="/" className="text-lg font-bold text-primary">
-            Ithvaraa Admin
+        <div className="h-16 flex items-center justify-between px-4 border-b">
+          <Link to="/" className="text-lg font-bold text-primary flex items-center gap-2">
+            <span className="bg-primary/10 text-primary p-1 rounded">IT</span>
+            <span>Ithvaraa Admin</span>
           </Link>
           <Button 
             variant="ghost" 
             size="icon" 
             className="md:hidden" 
-            onClick={() => setIsMobileOpen(false)}
+            onClick={() => setIsOpen(false)}
           >
             <X className="h-5 w-5" />
           </Button>
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 overflow-y-auto py-4">
-          <ul className="space-y-1 px-2">
+        <nav className="flex-1 overflow-y-auto py-6 px-3">
+          <div className="space-y-1">
             {navItems.map((item) => (
-              <li key={item.id}>
-                <Button 
-                  variant="ghost" 
-                  className={cn(
-                    "w-full justify-start text-sidebar-foreground hover:text-sidebar-foreground hover:bg-sidebar-accent",
-                    activeSection === item.id && "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
-                  )}
-                  onClick={() => setActiveSection(item.id)}
-                >
-                  <item.icon className="mr-2 h-5 w-5" />
-                  {item.label}
-                </Button>
-              </li>
+              <Button 
+                key={item.id}
+                variant={activeSection === item.id ? "secondary" : "ghost"} 
+                className={cn(
+                  "w-full justify-start font-normal",
+                  activeSection === item.id && "font-medium"
+                )}
+                onClick={() => setActiveSection(item.id)}
+              >
+                <item.icon className="mr-3 h-4 w-4" />
+                {item.label}
+              </Button>
             ))}
-          </ul>
+          </div>
         </nav>
 
         {/* Sidebar footer */}
-        <div className="p-4 border-t border-sidebar-border">
+        <div className="p-4 border-t">
           <Link to="/">
             <Button variant="outline" className="w-full">
               Back to Website
