@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Menu, Bell, User, Search } from 'lucide-react';
+import { Menu, Bell, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -58,7 +58,19 @@ const AdminHeader = ({ title, toggleSidebar }: AdminHeaderProps) => {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56">
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <div className="flex items-center p-2">
+                <div className="mr-2">
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Ithvaara Logo" 
+                    className="h-8 w-8"
+                  />
+                </div>
+                <div>
+                  <DropdownMenuLabel>Ithvaara Admin</DropdownMenuLabel>
+                  <p className="text-xs text-muted-foreground">admin@ithvaara.com</p>
+                </div>
+              </div>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Profile</DropdownMenuItem>
               <DropdownMenuItem>Settings</DropdownMenuItem>
