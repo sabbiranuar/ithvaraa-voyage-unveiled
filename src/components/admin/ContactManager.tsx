@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Check, Clock, AlertCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -23,7 +24,7 @@ const initialInquiries = [
     email: 'john.smith@example.com',
     phone: '+1 555-123-4567',
     message: 'Interested in the 7-day Meghalaya tour package. Can you provide more details about accommodation options?',
-    status: 'new',
+    status: 'new' as const,
     date: '2025-05-20'
   },
   {
@@ -32,7 +33,7 @@ const initialInquiries = [
     email: 'priya.m@example.com',
     phone: '+91 98765 43210',
     message: "Looking for a customized tour for a group of 6 people to Arunachal Pradesh in August. We're particularly interested in cultural experiences.",
-    status: 'inProgress',
+    status: 'inProgress' as const,
     date: '2025-05-18'
   },
   {
@@ -41,7 +42,7 @@ const initialInquiries = [
     email: 'mjohnson@example.com',
     phone: '+44 7700 900123',
     message: "Hello, we would like information about wildlife tours in Kaziranga. What's the best time to visit and how long is the recommended stay?",
-    status: 'completed',
+    status: 'completed' as const,
     date: '2025-05-15'
   },
   {
@@ -50,7 +51,7 @@ const initialInquiries = [
     email: 'liwei@example.com',
     phone: '+86 131 2345 6789',
     message: "I'm a solo traveler interested in your community trips. Do you have any scheduled departures in September that I could join?",
-    status: 'new',
+    status: 'new' as const,
     date: '2025-05-21'
   },
   {
@@ -59,7 +60,7 @@ const initialInquiries = [
     email: 'sophie.d@example.com',
     phone: '+33 6 12 34 56 78',
     message: "Bonjour! My husband and I are celebrating our anniversary and would love to explore Northeast India. Could you recommend a romantic 10-day itinerary?",
-    status: 'inProgress',
+    status: 'inProgress' as const,
     date: '2025-05-17'
   }
 ];
