@@ -61,7 +61,7 @@ const AdminHeader = ({ title, toggleSidebar }: AdminHeaderProps) => {
               <div className="flex items-center p-2">
                 <div className="mr-2">
                   <img 
-                    src="/placeholder.svg" 
+                    src="/lovable-uploads/d8cc3cc1-b3a9-404a-88ec-302081c42eff.png" 
                     alt="Ithvaara Logo" 
                     className="h-8 w-8"
                   />

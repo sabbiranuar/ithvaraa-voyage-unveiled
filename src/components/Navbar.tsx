@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from '/lovable-uploads/84eed264-6c40-4c6b-8298-4e5a56cfb8bf.png';
 
 interface NavbarProps {
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -46,8 +45,21 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
             <Menu className="h-6 w-6" />
           </Button>
           <div className="flex items-center">
-            <img src={logo} alt="Ithvaraa Logo" className="h-14" />
+            <img src="/lovable-uploads/d8cc3cc1-b3a9-404a-88ec-302081c42eff.png" alt="Ithvaraa Logo" className="h-14" />
           </div>
+        </div>
+        
+        <div className="hidden lg:flex items-center">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="nav-video"
+          >
+            <source src="https://drive.google.com/uc?export=download&id=107XPWgcyUuJR11CB2ineaz59f7h7sba7" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         
         <nav className="hidden md:flex items-center space-x-6 text-primary font-medium">
