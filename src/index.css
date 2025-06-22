@@ -99,13 +99,6 @@
   transition: opacity 0.3s ease;
 }
 
-.nav-video {
-  width: 200px;
-  height: 112px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
 .transparent-header {
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(5px);
