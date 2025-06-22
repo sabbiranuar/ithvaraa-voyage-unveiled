@@ -49,21 +49,6 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
           </div>
         </div>
         
-        <div className="hidden lg:flex items-center">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls={false}
-            className="w-48 h-28 object-cover rounded-lg shadow-md"
-            style={{ display: 'block' }}
-          >
-            <source src="https://drive.google.com/uc?export=download&id=107XPWgcyUuJR11CB2ineaz59f7h7sba7" type="video/mp4" />
-            <p>Your browser does not support the video tag.</p>
-          </video>
-        </div>
-        
         <nav className="hidden md:flex items-center space-x-6 text-primary font-medium">
           <a href="#home" className="hover:text-secondary transition-colors">Home</a>
           <a href="#about" className="hover:text-secondary transition-colors">About</a>
