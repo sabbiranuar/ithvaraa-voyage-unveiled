@@ -55,10 +55,12 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
             muted
             loop
             playsInline
-            className="w-48 h-28 object-cover rounded-lg"
+            controls={false}
+            className="w-48 h-28 object-cover rounded-lg shadow-md"
+            style={{ display: 'block' }}
           >
             <source src="https://drive.google.com/uc?export=download&id=107XPWgcyUuJR11CB2ineaz59f7h7sba7" type="video/mp4" />
-            Your browser does not support the video tag.
+            <p>Your browser does not support the video tag.</p>
           </video>
         </div>
         
